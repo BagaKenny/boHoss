@@ -50,8 +50,13 @@ nav img {
     flex: 1;
 }
 
+.image-container img{
+    width: 80vw;
+    margin-right: 10rem;
+}
 .chair-img {
-    transform: rotate(-5deg) scale(0.5);
+    transform: rotate(-8deg) scale(0.6) translateY(10%);
+    margin-right: 10rem;
 }
 
 .chair-text {

@@ -4,9 +4,9 @@
     box-sizing: border-box;
     font-family: poppins;
 }
-
+/* 260deg, #789388, #aca00e */
 body{
-    background: linear-gradient(260deg, #a3beb9, #b6b6b6);
+    background: linear-gradient(260deg, #a9f076, #ac430e);
 }
 
 .showcase {
@@ -44,14 +44,27 @@ nav img {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    width: 50vw;
     height: 80vh;
     z-index: 2;
     flex: 1;
 }
-
-.image-sofa {
-    transform: rotate(-8deg) scale(1.5) translateY(-10%);
+.image-container img{
+    width: 80vw;
+}
+.chair-img {
+    transform: rotate(-8deg) scale(0.6) translateY(10%);
     margin-right: 10rem;
+}
+.image-sofa {
+    transform: rotate(-7deg) scale(1.2) translateY(10%);
+}
+.image-lamp {
+    transform: rotate(-8deg) scale(0.4);
+    margin-right: 0.5rem;
+}
+.lamp-text{
+    color: rgb(255, 255, 255);
 }
 
 .showcase-text {
