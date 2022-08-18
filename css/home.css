@@ -9,6 +9,10 @@ body{
     background: linear-gradient(260deg, #a9f076, #ac430e);
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .showcase {
     display: flex;
     position: absolute;
@@ -84,13 +88,19 @@ nav img {
 
 .showcase-button {
     border: none;
+    cursor: pointer;
     font-size: 1.3rem;
     background-color: black;
     color:   #a3beb9;
     font-weight: bold;
     padding: 1rem 5rem;
+    transition: transform 1s ease;
     /* margin: 0rem 13rem 0rem 0rem;
     float: right; */
+}
+
+.showcase-button:hover{
+    transform: scale(1.1);
 }
 
 .showcase-arrow {
@@ -119,4 +129,55 @@ nav img {
     left: 37%;
     bottom: 15%;
     transform: scale(1.5);
+}
+/* Products */
+
+.product-nav{
+    min-height: 10vh;
+}
+.product-section{
+    background: white;
+    min-height: 90vh;
+    position: absolute;
+    width: 100vw;
+    z-index: 5;
+}
+
+.product-description {
+    padding: 5% 15%;
+    color: #4b4b4b;
+}
+
+.product-description h2 {
+   font-size: 2rem;
+}
+.product-description p {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+ }
+
+ .product-gallery {
+    display: grid;
+    padding: 0% 15%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5rem;
+ }
+
+ .product-gallery .product-img{
+    border-radius: 1rem;
+    width: 100%;
+    max-height: 50vh;
+ }
+
+ .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .card {
+    padding: 2rem;
+ }
+text {
+    display: none;
 }
